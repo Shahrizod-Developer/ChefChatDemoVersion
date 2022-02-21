@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/back_style_bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_250sdp">
+
+    <LinearLayout
+
+        android:id="@+id/linear"
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="@dimen/_31sdp"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:background="@drawable/back_style_searching"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0">
+
+        <ImageView
+
+            android:id="@+id/search"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:src="@drawable/icon_search" />
+
+        <EditText
+
+            android:id="@+id/searchText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:gravity="center_vertical"
+            android:hint="Searching"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColorHint="#959191" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+
+
+        android:id="@+id/rvProduct"
+        app:layout_constraintTop_toBottomOf="@id/linear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="4"
+        tools:listitem="@layout/item_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

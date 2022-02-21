@@ -1,0 +1,39 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ChefChatDemoVersion" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="android:actionBarStyle">@style/ThemeActionBar</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <!-- Support library compatibility -->
+        <item name="windowActionBarOverlay">true</item>
+        <item name="colorPrimary">#0B232E</item>
+        <item name="colorPrimaryVariant">@android:color/background_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="ThemeActionBar" parent="Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="android:background"> @null </item>
+        <!-- Support library compatibility -->
+        <item name="background">@null</item>
+        <item name="displayOptions">showHome|useLogo</item>
+
+    </style>
+
+    <style name="Widget.Support.CoordinatorLayout" parent="android:Widget">
+        @null</style>
+
+    <style name="Theme.ChefChatDemoVersion.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.ChefChatDemo.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.ChefChatDemo.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
