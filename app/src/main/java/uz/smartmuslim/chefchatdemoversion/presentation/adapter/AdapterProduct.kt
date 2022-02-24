@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import uz.smartmuslim.chefchatdemoversion.data.response.IngredientResponse
-import uz.smartmuslim.chefchatdemoversion.databinding.ItemArticleBinding
+import uz.smartmuslim.chefchatdemoversion.data.response.ProductResponse
 import uz.smartmuslim.chefchatdemoversion.databinding.ItemIngredientBinding
 
 class AdapterProduct(

@@ -16,20 +16,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:alpha="0.6"
             android:src="@drawable/imagefood" />
 
-        <ImageView
-
-            android:id="@+id/imageAdd"
-            app:layout_constraintTop_toTopOf="@id/image"
-            app:layout_constraintBottom_toBottomOf="@id/image"
-            app:layout_constraintLeft_toLeftOf="@id/image"
-            app:layout_constraintRight_toRightOf="@id/image"
-            android:src="@drawable/ic_baseline_add_a_photo_24"
-            android:layout_width="@dimen/_50sdp"
-            android:layout_height="@dimen/_50sdp"
-            app:tint="@color/white" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

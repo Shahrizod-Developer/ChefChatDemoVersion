@@ -24,6 +24,7 @@
         <entry key="..\:/E/ChefChatDemoVersion/app/src/main/res/layout/activity_main.xml" value="0.19692307692307692" />
         <entry key="..\:/E/ChefChatDemoVersion/app/src/main/res/layout/activity_second.xml" value="0.2" />
         <entry key="..\:/E/ChefChatDemoVersion/app/src/main/res/layout/dialog_add_product.xml" value="0.2" />
+        <entry key="..\:/E/ChefChatDemoVersion/app/src/main/res/layout/dialog_bottom_menu.xml" value="0.2" />
         <entry key="..\:/E/ChefChatDemoVersion/app/src/main/res/layout/item_article.xml" value="0.2" />
         <entry key="..\:/E/ChefChatDemoVersion/app/src/main/res/layout/item_cart.xml" value="0.2" />
         <entry key="..\:/E/ChefChatDemoVersion/app/src/main/res/layout/item_comment.xml" value="0.2" />
@@ -40,9 +41,12 @@
         <entry key="..\:/E/ChefChatDemoVersion/app/src/main/res/layout/layout.xml" value="0.2" />
         <entry key="..\:/E/ChefChatDemoVersion/app/src/main/res/layout/screen_add.xml" value="0.13236814891416754" />
         <entry key="..\:/E/ChefChatDemoVersion/app/src/main/res/layout/screen_advanced.xml" value="0.25" />
+        <entry key="..\:/E/ChefChatDemoVersion/app/src/main/res/layout/screen_advanced_search.xml" value="0.2" />
+        <entry key="..\:/E/ChefChatDemoVersion/app/src/main/res/layout/screen_article.xml" value="0.1859375" />
         <entry key="..\:/E/ChefChatDemoVersion/app/src/main/res/layout/screen_bookmark.xml" value="0.2" />
         <entry key="..\:/E/ChefChatDemoVersion/app/src/main/res/layout/screen_cart.xml" value="0.2" />
         <entry key="..\:/E/ChefChatDemoVersion/app/src/main/res/layout/screen_home.xml" value="0.2" />
+        <entry key="..\:/E/ChefChatDemoVersion/app/src/main/res/layout/screen_other.xml" value="0.2" />
         <entry key="..\:/E/ChefChatDemoVersion/app/src/main/res/layout/screen_recipe.xml" value="0.16459494213459067" />
         <entry key="..\:/E/ChefChatDemoVersion/app/src/main/res/layout/screen_search.xml" value="0.2" />
         <entry key="..\:/E/ChefChatDemoVersion/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2" />

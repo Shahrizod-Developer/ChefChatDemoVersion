@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+
+        android:id="@+id/linear"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:orientation="vertical"
+        android:background="@color/black"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_3sdp"/>
+
+    <ImageView
+
+        app:layout_constraintTop_toBottomOf="@id/linear"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constraintHorizontal_bias="0.95"
+        android:src="@drawable/icon_mode"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0"
+        android:id="@+id/mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/imageProfile"
+        app:layout_constraintTop_toBottomOf="@id/mode"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0"
+        android:src="@drawable/imagefood"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"/>
+
+    <TextView
+
+        android:id="@+id/username"
+        app:layout_constraintTop_toBottomOf="@id/imageProfile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/imageProfile"
+        app:layout_constraintRight_toRightOf="@id/imageProfile"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="is_unity"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/rosario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+
+        android:id="@+id/ln"
+        app:layout_constraintTop_toBottomOf="@id/username"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:background="#828282"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"/>
+
+    <LinearLayout
+
+        app:layout_constraintTop_toBottomOf="@id/ln"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="@dimen/_150sdp">
+
+        <LinearLayout
+
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:id="@+id/accountButton"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+
+
+                    android:id="@+id/accountImage"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintVertical_bias="1"
+                    android:src="@drawable/ic_baseline_account_circle_24"
+                    app:layout_constraintHorizontal_bias="0"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    app:tint="@color/black" />
+
+                <TextView
+
+                    android:id="@+id/account"
+                    app:layout_constraintTop_toTopOf="@id/accountImage"
+                    app:layout_constraintBottom_toBottomOf="@id/accountImage"
+                    app:layout_constraintLeft_toRightOf="@id/accountImage"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/rosario"
+                    android:text="Account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:id="@+id/settingButton"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+
+
+                    android:id="@+id/settingImage"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:src="@drawable/ic_baseline_settings_24"
+                    app:layout_constraintHorizontal_bias="0"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    app:tint="@color/black" />
+
+                <TextView
+
+                    android:id="@+id/setting"
+                    app:layout_constraintTop_toTopOf="@id/settingImage"
+                    app:layout_constraintBottom_toBottomOf="@id/settingImage"
+                    app:layout_constraintLeft_toRightOf="@id/settingImage"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/rosario"
+                    android:text="Setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:id="@+id/aboutButton"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+
+
+                    android:id="@+id/abouttImage"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintVertical_bias="0"
+                    android:src="@drawable/icon_about"
+                    app:layout_constraintHorizontal_bias="0"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_width="@dimen/_23sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    app:tint="@color/black" />
+
+                <TextView
+
+                    android:id="@+id/about"
+                    app:layout_constraintTop_toTopOf="@id/abouttImage"
+                    app:layout_constraintBottom_toBottomOf="@id/abouttImage"
+                    app:layout_constraintLeft_toRightOf="@id/abouttImage"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/rosario"
+                    android:text="About"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

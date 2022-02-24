@@ -25,6 +25,7 @@
 
     </style>
 
+
     <style name="Widget.Support.CoordinatorLayout" parent="android:Widget">
         @null</style>
 

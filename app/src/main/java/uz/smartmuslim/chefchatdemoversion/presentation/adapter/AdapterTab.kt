@@ -4,14 +4,10 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.FrameLayout
 import android.widget.TextView
 import android.widget.Toast
-import androidx.appcompat.widget.AppCompatTextView
-import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import uz.smartmuslim.chefchatdemo.data.response.FoodResponse
+import uz.smartmuslim.chefchatdemoversion.data.response.FoodResponse
 import uz.smartmuslim.chefchatdemoversion.R
 import uz.smartmuslim.chefchatdemoversion.presentation.ui.viewmodel.ScreenSearchViewModel
 

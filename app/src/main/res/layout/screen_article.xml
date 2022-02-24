@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.ui.screen.ScreenArticle">
+
+    <com.google.android.material.appbar.AppBarLayout
+
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+
+
+            android:id="@+id/collapsingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:fitsSystemWindows="true"
+            android:foregroundGravity="bottom"
+            app:collapsedTitleTextAppearance="@style/Theme.ChefChatDemoVersion"
+            app:contentScrim="@color/black"
+            app:expandedTitleMarginTop="@dimen/_15sdp"
+            app:expandedTitleTextAppearance="@style/Theme.ChefChatDemoVersion"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            app:maxLines="3"
+            app:titleCollapseMode="scale">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_220sdp">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+
+                        android:id="@+id/imageFood"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/imagearticle" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.Toolbar
+
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                android:background="@android:color/transparent"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Dark">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+
+                        android:id="@+id/back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_back"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:tint="@color/white" />
+
+                    <ImageView
+
+                        android:id="@+id/share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_3sdp"
+                        android:src="@drawable/icon_share"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="1"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+
+                        android:id="@+id/bookmark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_3sdp"
+                        android:src="@drawable/icon_bookmark"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="1"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/share"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:tint="@color/white" />
+
+                    <TextView
+
+                        android:id="@+id/title"
+                        android:layout_width="@dimen/_190sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/rosario"
+                        android:maxLines="1"
+                        android:visibility="gone"
+                        android:text="Homilador ayollar uchun eng foydali oziq ovqatlar"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintRight_toLeftOf="@id/bookmark"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/back"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:id="@+id/titleArticle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintVertical_bias="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_17sdp"
+            android:layout_margin="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:fontFamily="@font/rosario"
+            android:text="Homilador ayollar uchun eng foydali oziq-ovqatlar"
+            android:layout_width="@dimen/_290sdp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+
+
+            android:id="@+id/text1"
+            app:layout_constraintTop_toBottomOf="@id/titleArticle"
+            android:layout_margin="@dimen/_10sdp"
+            android:gravity="start"
+            app:layout_constraintVertical_bias="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/rosario"
+            android:text="Bo‘lajak onalar har doim qanday oziq-ovqatlar iste’mol qilayotgani to‘g‘risida o‘ylashi kerak, chunki ayollar homiladorlik davrida oziq-ovqatlarning nafaqat ta’mini, balki uning bolaga yetkazishi mumkin bo‘lgan foydasi va zararini ham hisobga olishiga to‘g‘ri keladi. Ko‘pchilik ayollarda “Homilador ayollar uchun qanday oziq-ovqatlar eng foydali?” degan savol paydo bo‘ladi."
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+
+            android:id="@+id/image2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/text1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0"
+            android:layout_margin="@dimen/_10sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/imagearticle2" />
+
+        <TextView
+
+
+            android:id="@+id/text2"
+            app:layout_constraintTop_toBottomOf="@id/image2"
+            android:layout_margin="@dimen/_10sdp"
+            android:gravity="start"
+            app:layout_constraintVertical_bias="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/rosario"
+            android:text="Sizga homiladorlik davrida oziq-ovqatlar tanlashni biroz bo‘lsa-da yengillashtirish maqsadida biz bo‘lajak onalar uchun eng foydali bo‘lgan oziq-ovqatlar ro‘yxatini tuzdik."
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+
+
+            android:id="@+id/text3"
+            app:layout_constraintTop_toBottomOf="@id/text2"
+            android:layout_margin="@dimen/_10sdp"
+            android:gravity="start"
+            app:layout_constraintVertical_bias="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/rosario"
+            android:text="Sabzi: homiladorlik paytida eng foydali sabzavot.  Sabzi me’da-ichak yo‘llari faoliyatini yaxshilaydi. Uning tarkibida katta miqdorda karotin, E, C vitaminlari, B, K va PP guruhiga mansub vitaminlar mavjud. Bu foydali moddalar bolaning a’zolari shakllanishiga yordam beradi. Bu sabzavot me’da yarasi, me’da osti bezi muammolari va me’da-ichak yo‘llari yallig‘lanishlari bo‘lgan ayollarga tavsiya qilinmaydi.
+
+Shirin bulg‘or qalampiri: shifobaxsh xususiyatlarga ega, shilliq qavatlar holatini yaxshilashga yordam beradi va tomirlarni mustahkamlaydi. Qalampir tarkibidagi foydali moddalar homilador ayolning suyaklarini mustahkamlaydi va bolaning suyaklari shakllanishiga yordam beradi. Bu sabzavot tarkibidagi C, E, PP va P vitaminlari teri holatini yaxshilaydi. Efir yog‘lari, oqsil va beta-karotin esa immunitetni oshiradi.
+
+Ismaloq: bu sabzavot homilador ayollarda bola tushish xavfini kamaytirishda, homiladorlik toksikozida va kamqonlikning oldini olishda yordam beruvchi foli kislotasi (A, B9 va E vitaminlari)ga juda boy.
+
+Pomidor: juda to‘yimli va kaloriyasi past bo‘lgan bu sabzavot tarkibida hujayralarni erkin radikallardan himoya qilishda yordam beruvchi va noyob hisoblanuvchi likopin moddasi mavjud.
+
+Banan: bu meva tarkibida kraxmallar soni ko‘pligi va kaloriyasi baland bo‘lishiga qaramasdan shifokorlar undan voz kechishni tavsiya qilishmaydi. Banan tarkibida homila uchun eng foydali elementlar mavjud, bular — rux va kaliy.
+
+Olma: bu meva me’da-ichak yo‘llari faoliyatini yaxshilashga yordam beradi, me’da suyuqligi ajralishini ko‘paytiradi, ko‘ngil aynishini yo‘qotadi. Olmada homila rivojlanishiga yordam beruvchi ko‘plab temir, marganets, magniy, fosfor va kaliy moddalari bor."
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

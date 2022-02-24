@@ -5,5 +5,9 @@ data class ProductResponse(
     var name: String,
     var image: String,
     var amount: String,
-    var unit: String
+    var unit: String,
+    var calorie: String,
+    var fat: String,
+    var protein: String,
+    var carbs: String
 )

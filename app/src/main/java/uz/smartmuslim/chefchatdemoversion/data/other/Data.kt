@@ -1,6 +1,7 @@
 package uz.smartmuslim.chefchatdemoversion.data.other
 
 import uz.smartmuslim.chefchatdemoversion.data.response.CategoryResponse
+import uz.smartmuslim.chefchatdemoversion.data.response.ProductResponse
 import uz.smartmuslim.chefchatdemoversion.data.response.PreparationResponse
 
 object Category {
@@ -14,40 +15,109 @@ object Category {
     )
 }
 
+object Photos{
+    var items = arrayListOf(
+        Photo("https://i.ytimg.com/vi/ay9lLMGZjsg/mqdefault.jpg"),
+
+        Photo("https://i.ytimg.com/vi/66rj1GmpmxQ/maxresdefault.jpg"),
+
+        Photo("https://zira.uz/wp-content/uploads/2018/07/kovurma-lagman-14.jpg"),
+    )
+}
+
+
+object Ingredients{
+    var items = arrayListOf(
+        ProductResponse(
+
+            1,
+            "Suv",
+            "https://yukber.uz/image/cache/catalog/product/YK0365/YK0365_1-700x700.jpg",
+            "1000",
+            "ml",
+            "1000",
+            "150",
+            "350",
+            "70"
+
+        ),
+        ProductResponse(
+
+            2,
+            "Tuz",
+            "https://img02.flagma.uz/photo/tuz-eng-arzon-narxda-o-zbekiston-tuz-1762911_big.jpg",
+            "1000",
+            "gr",
+            "1000",
+            "150",
+            "350",
+            "70"
+
+        ),
+
+    )
+}
+
 object Data {
     var items = arrayListOf(
         PreparationResponse(
-            "Item 0",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            "Qadam 1",
+            "Kastrulyaga suv solib, tuz sepamiz va qaynatishga qo'yamiz."
         ),
         PreparationResponse(
-            "Item 1",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+            "Qadam 2",
+            "Qaynab chiqqanidan so'ng lapshani qaynab turgan sho'r suvga 1 daqiqaga solib, so'ngra suvini to'kib tashlaymiz."
         ),
         PreparationResponse(
-            "Item 2",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut"
+            "Qadam 3",
+            "Mol go'shti, qizil va yashil bulg'or qalampirilarini to'rtburchak shaklida to'g'raymiz."
         ),
         PreparationResponse(
-            "Item 3",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "Qadam 4",
+            "Piyoz va sabzini yarim halqa shaklida to'g'raymiz."
         ),
         PreparationResponse(
-            "Item 4",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            "Qadam 5",
+            "Pomidorlarni mayda qilib to'g'raymiz."
         ),
         PreparationResponse(
-            "Item 5",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "Qadam 6",
+            "Qozonga yog' solib, qizdiramiz."
         ),
         PreparationResponse(
-            "Item 6",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident"
+            "Qadam 7",
+            "Qizdirilgan yog'ga go'shtni solib, 15 daqiqa qovuramiz.\n" +
+                    "\n" +
+                    "Maslahat: agar go'sht qattiq bo'lsa, ozroq suv solib, qozon qopqog'ini yopgan holda pishirish kerak bo'ladi."
         ),
         PreparationResponse(
-            "Item 7",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-        )
+            "Qadam 8",
+            "Go'shtga piyozni solib, 10-15 daqiqa qovuramiz."
+        ),
+        PreparationResponse(
+            "Qadam 9",
+            "So'ngra to'g'ralgan bulg'or qalampiri, sabzi, tuz va zira solamiz. Barchasini yumshagunicha qovurish kerak."
+        ),
+        PreparationResponse(
+            "Qadam 10",
+            "So'ngra pomidor solib, 7 daqiqa qovuramiz."
+        ),
+        PreparationResponse(
+            "Qadam 11",
+            "Qovurilayotgan massaga lapsha solib, yaxshilab aralashtiramiz va yana 10 daqiqa qovuramiz."
+        ),
+        PreparationResponse(
+            "Qadam 12",
+            "Idishga 2 ta tuxum chaqib, tuz sepib, sanchqi yordamida yaxshilab aralashtiramiz."
+        ),
+        PreparationResponse(
+            "Qadam 13",
+            "Tovaga o'simlik yog'ini solib, quymoq qilamiz."
+        ),
+        PreparationResponse(
+            "Qadam 14",
+            "Quymoqni mayda qilib, yoki somoncha shaklida to'g'raymiz."
+        ),
     )
 }
 

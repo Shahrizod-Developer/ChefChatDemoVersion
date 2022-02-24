@@ -3,6 +3,7 @@
     android:layout_width="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="@dimen/_5sdp"
+    android:elevation="@dimen/_10sdp"
     android:layout_height="wrap_content">
 
 
@@ -27,7 +28,6 @@
         app:layout_constraintLeft_toLeftOf="@id/image"
         app:layout_constraintRight_toRightOf="@id/image"
         app:layout_constraintVertical_bias="0"
-        app:layout_constraintHorizontal_bias="0"
         android:textSize="@dimen/_12sdp"
         android:gravity="center"
         android:text="Water"

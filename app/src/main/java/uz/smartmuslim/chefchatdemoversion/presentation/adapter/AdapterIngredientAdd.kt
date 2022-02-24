@@ -5,15 +5,16 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import uz.smartmuslim.chefchatdemoversion.data.response.IngredientResponse
 import uz.smartmuslim.chefchatdemoversion.data.response.ProductResponse
 import uz.smartmuslim.chefchatdemoversion.databinding.ItemIngredientAddBinding
 
 
-class AdapterIngredirentAdd(
+class AdapterIngredientAdd(
     private val context: Context,
-    private val list: List<ProductResponse>,
+    private val list: ArrayList<ProductResponse>,
     val onClick: (ingredient: ProductResponse, pos: Int) -> Unit
-) : RecyclerView.Adapter<AdapterIngredirentAdd.ViewHolder>() {
+) : RecyclerView.Adapter<AdapterIngredientAdd.ViewHolder>() {
 
     inner class ViewHolder(private val binding: ItemIngredientAddBinding) :
         RecyclerView.ViewHolder(binding.root) {
@@ -28,7 +29,6 @@ class AdapterIngredirentAdd(
             }
         }
     }
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
             ItemIngredientAddBinding.inflate(
@@ -38,7 +38,6 @@ class AdapterIngredirentAdd(
             )
         )
     }
-
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.onBind(list[position], position)
     }

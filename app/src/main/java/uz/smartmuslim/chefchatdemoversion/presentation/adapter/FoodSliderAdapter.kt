@@ -12,7 +12,7 @@ import android.widget.TextView
 import android.widget.VideoView
 import androidx.viewpager.widget.PagerAdapter
 import com.bumptech.glide.Glide
-import uz.smartmuslim.chefchatdemo.data.response.FoodResponse
+import uz.smartmuslim.chefchatdemoversion.data.response.FoodResponse
 import uz.smartmuslim.chefchatdemoversion.R
 
 

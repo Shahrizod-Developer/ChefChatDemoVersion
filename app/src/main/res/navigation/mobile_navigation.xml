@@ -6,32 +6,61 @@
     app:startDestination="@+id/screen_home">
 
     <fragment
-        android:id="@+id/screen_home"
-        android:name="uz.smartmuslim.chefchatdemoversion.presentation.ui.screen.ScreenHome"
-        android:label="@string/title_home"
-        tools:layout="@layout/screen_home" />
-
-    <fragment
-        android:id="@+id/screen_search"
-        android:name="uz.smartmuslim.chefchatdemoversion.presentation.ui.screen.ScreenSearch"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/screen_search" />
-
-    <fragment
         android:id="@+id/screen_add"
         android:name="uz.smartmuslim.chefchatdemoversion.presentation.ui.screen.ScreenAdd"
-        android:label="@string/title_notifications"
+        android:label="screen_add"
         tools:layout="@layout/screen_add" />
-
+    <fragment
+        android:id="@+id/screenAdvanced"
+        android:name="uz.smartmuslim.chefchatdemoversion.presentation.ui.screen.ScreenAdvanced"
+        android:label="screen_advanced"
+        tools:layout="@layout/screen_advanced" />
+    <fragment
+        android:id="@+id/screenBookmark"
+        android:name="uz.smartmuslim.chefchatdemoversion.presentation.ui.screen.ScreenBookmark"
+        android:label="screen_bookmark"
+        tools:layout="@layout/screen_bookmark" >
+        <action
+            android:id="@+id/action_screenBookmark_to_screenRecipe"
+            app:destination="@id/screenRecipe" />
+    </fragment>
     <fragment
         android:id="@+id/screenCart"
         android:name="uz.smartmuslim.chefchatdemoversion.presentation.ui.screen.ScreenCart"
         android:label="screen_cart"
         tools:layout="@layout/screen_cart" />
-
     <fragment
-        android:id="@+id/screenBookmark"
-        android:name="uz.smartmuslim.chefchatdemoversion.presentation.ui.screen.ScreenBookmark"
-        android:label="screen_bookmark"
-        tools:layout="@layout/screen_bookmark" />
+        android:id="@+id/screen_home"
+        android:name="uz.smartmuslim.chefchatdemoversion.presentation.ui.screen.ScreenHome"
+        android:label="screen_home"
+        tools:layout="@layout/screen_home" >
+        <action
+            android:id="@+id/action_screenHome_to_screenRecipe"
+            app:destination="@id/screenRecipe" />
+        <action
+            android:id="@+id/action_screen_home_to_screenArticle"
+            app:destination="@id/screenArticle" />
+    </fragment>
+    <fragment
+        android:id="@+id/screenRecipe"
+        android:name="uz.smartmuslim.chefchatdemoversion.presentation.ui.screen.ScreenRecipe"
+        android:label="screen_recipe"
+        tools:layout="@layout/screen_recipe" />
+    <fragment
+        android:id="@+id/screen_search"
+        android:name="uz.smartmuslim.chefchatdemoversion.presentation.ui.screen.ScreenSearch"
+        android:label="screen_search"
+        tools:layout="@layout/screen_search" >
+        <action
+            android:id="@+id/action_screenSearch_to_screenRecipe"
+            app:destination="@id/screenRecipe" />
+        <action
+            android:id="@+id/action_screenSearch_to_screenAdvanced"
+            app:destination="@id/screenAdvanced" />
+    </fragment>
+    <fragment
+        android:id="@+id/screenArticle"
+        android:name="uz.smartmuslim.chefchatdemoversion.presentation.ui.screen.ScreenArticle"
+        android:label="screen_article"
+        tools:layout="@layout/screen_article" />
 </navigation>
